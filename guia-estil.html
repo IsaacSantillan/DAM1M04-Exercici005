@@ -3,4 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Guia d'Estil</title>
+    <title>Guia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="estils.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Guia</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Página Principal</a></li>
+                <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+                <li><a href="guia-estil.html" class="nav-link active">Guia</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero hero-small">
+        <h1 class="hero-title">Guia d'Estil</h1>
+        <p class="hero-subtitle">Tipografia, icones i sistema de colors</p>
+    </section>
+
+    <section class="typography-section">
+        <h2 class="section-title">Tipografia</h2>
+        
+        <div class="typo-showcase">
+            <div class="typo-example">
+                <h1 class="display-1">Títol H1 - Display</h1>
+                <p class="typo-specs">Montserrat 800 / 3.5rem / 1.2</p>
+            </div>
+
+            <div class="typo-example">
+                <h2 class="display-2">Títol H2 - Section</h2>
+                <p class="typo-specs">Montserrat 600 / 2.5rem / 1.3</p>
+            </div>
+
+            <div class="typo-example">
+                <h3 class="display-3">Títol H3 - Subsection</h3>
+                <p class="typo-specs">Montserrat 600 / 1.75rem / 1.4</p>
+            </div>
+
+            <div class="typo-example">
+                <p class="body-large">Paràgraf gran: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="typo-specs">Open Sans 400 / 1.125rem / 1.6</p>
+            </div>
+
+            <div class="typo-example">
+                <p class="body-regular">Paràgraf regular: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                <p class="typo-specs">Open Sans 400 / 1rem / 1.6</p>
+            </div>
+
+            <div class="typo-example">
+                <p class="body-small">Paràgraf petit: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="typo-specs">Open Sans 300 / 0.875rem / 1.5</p>
+            </div>
+        </div>
+
+        <div class="baseline-example">
+            <h3 class="subsection-title">Alineació a Baseline</h3>
+            <div class="baseline-demo">
+                <span class="material-icons-outlined">check_circle</span>
+                <p>Les icones i el text s'alineen correctament a la línia base</p>
+            </div>
+            <div class="baseline-demo">
+                <span class="material-icons-outlined">star</span>
+                <p>Això millora la llegibilitat i l'estètica visual</p>
+            </div>
+        </div>
+
+        <div class="scale-example">
+            <h3 class="subsection-title">Escala Tipogràfica (rem)</h3>
+            <div class="scale-grid">
+                <span class="scale-item" style="font-size: 0.75rem;">0.75rem</span>
+                <span class="scale-item" style="font-size: 0.875rem;">0.875rem</span>
+                <span class="scale-item" style="font-size: 1rem;">1rem (base)</span>
+                <span class="scale-item" style="font-size: 1.125rem;">1.125rem</span>
+                <span class="scale-item" style="font-size: 1.25rem;">1.25rem</span>
+                <span class="scale-item" style="font-size: 1.5rem;">1.5rem</span>
+                <span class="scale-item" style="font-size: 1.75rem;">1.75rem</span>
+                <span class="scale-item" style="font-size: 2rem;">2rem</span>
+                <span class="scale-item" style="font-size: 2.5rem;">2.5rem</span>
+                <span class="scale-item" style="font-size: 3rem;">3rem</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="icons-section">
+        <h2 class="section-title">Material Icons</h2>
+        
+        <div class="icons-showcase">
+            <h3 class="subsection-title">Mides i Pesos Variables</h3>
+            <div class="icon-variants">
+                <div class="icon-example">
+                    <span class="material-icons-outlined icon-small">home</span>
+                    <p>Petit (18px)</p>
+                </div>
+                <div class="icon-example">
+                    <span class="material-icons-outlined icon-medium">home</span>
+                    <p>Mitjà (24px)</p>
+                </div>
+                <div class="icon-example">
+                    <span class="material-icons-outlined icon-large">home</span>
+                    <p>Gran (36px)</p>
+                </div>
+                <div class="icon-example">
+                    <span class="material-icons-outlined icon-xlarge">home</span>
+                    <p>Extra Gran (48px)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="icon-buttons">
+            <h3 class="subsection-title">Botons amb Icones</h3>
+            <div class="buttons-grid">
+                <button class="icon-btn primary">
+                    <span class="material-icons-outlined">download</span>
+                    Descarregar
+                </button>
+                <button class="icon-btn secondary">
+                    <span class="material-icons-outlined">share</span>
+                    Compartir
+                </button>
+                <button class="icon-btn success">
+                    <span class="material-icons-outlined">check</span>
+                    Confirmar
+                </button>
+                <button class="icon-btn danger">
+                    <span class="material-icons-outlined">delete</span>
+                    Eliminar
+                </button>
+            </div>
+
+            <h3 class="subsection-title">Enllaços amb Icones</h3>
+            <div class="links-grid">
+                <a href="#" class="icon-link">
+                    <span class="material-icons-outlined">email</span>
+                    Contacte
+                </a>
+                <a href="#" class="icon-link">
+                    <span class="material-icons-outlined">phone</span>
+                    Telèfon
+                </a>
+                <a href="#" class="icon-link">
+                    <span class="material-icons-outlined">location_on</span>
+                    Ubicació
+                </a>
+                <a href="#" class="icon-link">
+                    <span class="material-icons-outlined">open_in_new</span>
+                    Web externa
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="colors-section">
+        <h2 class="section-title">Sistema de Colors</h2>
+        
+        <div class="colors-table">
+            <div class="color-row">
+                <div class="color-swatch color-primary"></div>
+                <div class="color-info">
+                    <h4>Primary</h4>
+                    <p>HEX: #6366f1</p>
+                    <p>RGB: rgb(99, 102, 241)</p>
+                    <p>HSL: hsl(237, 85%, 67%)</p>
+                    <p>Alpha: rgba(99, 102, 241, 0.8)</p>
+                </div>
+            </div>
+
+            <div class="color-row">
+                <div class="color-swatch color-secondary"></div>
+                <div class="color-info">
+                    <h4>Secondary</h4>
+                    <p>HEX: #8b5cf6</p>
+                    <p>RGB: rgb(139, 92, 246)</p>
+                    <p>HSL: hsl(258, 90%, 66%)</p>
+                    <p>Alpha: rgba(139, 92, 246, 0.8)</p>
+                </div>
+            </div>
+
+            <div class="color-row">
+                <div class="color-swatch color-success"></div>
+                <div class="color-info">
+                    <h4>Success</h4>
+                    <p>HEX: #10b981</p>
+                    <p>RGB: rgb(16, 185, 129)</p>
+                    <p>HSL: hsl(160, 84%, 39%)</p>
+                    <p>Alpha: rgba(16, 185, 129, 0.8)</p>
+                </div>
+            </div>
+
+            <div class="color-row">
+                <div class="color-swatch color-danger"></div>
+                <div class="color-info">
+                    <h4>Danger</h4>
+                    <p>HEX: #ef4444</p>
+                    <p>RGB: rgb(239, 68, 68)</p>
+                    <p>HSL: hsl(0, 84%, 60%)</p>
+                    <p>Alpha: rgba(239, 68, 68, 0.8)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accessibility-note">
+            <span class="material-icons-outlined">accessible</span>
+            <div>
+                <h4>Nota d'Accessibilitat</h4>
+                <p>Tots els colors compleixen amb el contrast mínim WCAG AA (4.5:1) sobre fons blanc i WCAG AAA (7:1) amb fons fosc. La mida mínima de text és de 16px per garantir la llegibilitat.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Exercici 005 - DAM1M04</p>
+    </footer>
+</body>
+</html>
