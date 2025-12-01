@@ -1,10 +1,10 @@
 :root {
-    --primary: #6366f1;
-    --secondary: #8b5cf6;
+    --primary: #08009b;
+    --secondary: #000000;
     --success: #10b981;
     --danger: #ef4444;
     --dark: #1e293b;
-    --light: #f8fafc;
+    --light: #ffffff;
     --gray: #64748b;
     --white: #ffffff;
     
@@ -161,7 +161,9 @@ section {
 .hero {
     padding: var(--spacing-xxl) var(--spacing-md);
     text-align: center;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background-image: url("assets/img/portada\ ps\ 2.jpg");
+    background-size: cover;
+    background-position: center;
     color: var(--white);
     min-height: 60vh;
     display: flex;
@@ -215,3 +217,90 @@ section {
 .hero-btn:hover .material-icons-outlined {
     transform: rotate(90deg);
 }
+.cards-container {
+    display: flex;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.6s;
+}
+
+.card-content {
+    padding: var(--spacing-md);
+}
+
+.card-title {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.card-description {
+    color: var(--gray);
+    margin-bottom: var(--spacing-sm);
+}
+
+.card-timing {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: var(--light);
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    color: var(--primary);
+    font-family: monospace;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-xl);
+}
+
+.card:hover .card-image {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+.card-linear {
+    transition-timing-function: linear;
+}
+
+.card-linear .card-image {
+    transition-timing-function: linear;
+}
+
+.card-ease {
+    transition-timing-function: ease;
+}
+
+.card-ease .card-image {
+    transition-timing-function: ease;
+}
+
+.card-ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+.card-ease-in-out .card-image {
+    transition-timing-function: ease-in-out;
+}
+
