@@ -351,6 +351,9 @@ section {
     padding: var(--spacing-xl);
     margin: var(--spacing-lg) 0;
     box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .animated-box {
@@ -377,6 +380,20 @@ section {
     text-align: center;
     color: var(--gray);
     font-style: italic;
+}
+.pulse-box {
+    background: var(--danger);
+    border-radius: 100%;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+.alternate-box {
+    background: var(--success);
+    border-radius: var(--radius-md);
+    animation: slideAlternate 2s ease-in-out infinite alternate;
+}
+.pulse-box .material-icons-outlined,
+.alternate-box .material-icons-outlined {
+    font-size: 2.5rem;
 }
 
 @keyframes bounceAndSpin {
@@ -490,6 +507,20 @@ section {
     }
 }
 
+.repetition-section {
+    background: var(--light);
+    padding: var(--spacing-xxl) var(--spacing-md);
+    margin: var(--spacing-xl) 0;
+    border-radius: var(--radius-lg);
+}
+
+.animation-demo-container {
+    display: flex;
+    gap: var(--spacing-xl);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: var(--spacing-lg);
+}
 .demo-box {
     text-align: center;
     background: var(--white);
@@ -504,4 +535,51 @@ section {
     margin-bottom: var(--spacing-xs);
     color: var(--dark);
 }
+
+.demo-code {
+    display: block;
+    font-family: monospace;
+    font-size: 0.875rem;
+    color: var(--gray);
+    background: var(--light);
+    padding: var(--spacing-xs);
+    border-radius: var(--radius-sm);
+    margin-top: var(--spacing-xs);
+}
+
+.pulse-box,
+.alternate-box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    margin: 0 auto var(--spacing-md);
+}
+
+.footer {
+    background: var(--dark);
+    color: var(--white);
+    text-align: center;
+    padding: var(--spacing-lg);
+    margin-top: var(--spacing-xxl);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(8, 0, 255, 0.7);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 15px rgba(239, 68, 68, 0);
+    }
+}
+
+@keyframes slideAlternate {
+    from { transform: translateX(-30px); }
+    to { transform: translateX(30px); }
+}
+
 
